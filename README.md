@@ -1,7 +1,10 @@
 # fluentd custom
 
-- timezone: Asia/Tokyo
-- plugin: s3, slack
+## build env
+| key | val |
+| --- | --- |
+| FLUENT_TZ | Asia/Tokyo |
+| FLUENT_PLUGINS | fluent-plugin-s3:1.1.11 fluent-plugin-slack:0.6.7 fluent-plugin-record-reformer:0.9.1 |
 
 ## run
 ```
