@@ -1,9 +1,10 @@
 FROM fluent/fluentd:v1.7.1-1.0
 
+LABEL maintainer="nakatest1234, twitter:@ambient2step" \
+      Description="Fluentd docker custom image"
+
 ENV FLUENT_TZ      Asia/Tokyo
 ENV FLUENT_PLUGINS fluent-plugin-s3:1.1.11 fluent-plugin-slack:0.6.7 fluent-plugin-record-reformer:0.9.1
-
-MAINTAINER nakatest1234 <ambient2step@gmail.com>
 
 USER root
 
